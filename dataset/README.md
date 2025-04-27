@@ -1,0 +1,4 @@
+- `crawling.py`: This file is used for data crawling. Since the dataset is quite large and integrating everything into a single .csv file would take a long time, the crawled data from each real estate page is first saved as .json files.
+- `concatenating.py`: This file is used to merge the .json files and export them as .csv files. There are two .csv outputs: one contains the data crawled directly from the real estate listings; the other contains data extracted from the titles and content of the listings, serving as a "reserve" dataset in case the primary data is missing certain fields.
+- `json_data`: During crawling, to better manage the data flow, I crawl each page of the website separately and save them into individual .json files, which are later merged.
+- `csv_data`: The data after merging and cleaning.
